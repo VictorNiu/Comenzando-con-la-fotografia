@@ -1,0 +1,73 @@
+body{
+  display: flex;
+  flex-flow: column;
+  width: auto;
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+  text-align: center;
+}
+a:{
+  text-decoration: none;
+}
+img{
+  box-shadow: 2px 2px 2px #02010a;
+  margin: 5%;
+  width: 80%;
+  height: auto;
+}
+header{
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+header h1{
+  color: white;
+  float: left;
+  padding-left: 2%;
+}
+header nav{
+  float: right;
+  padding: 2%;
+}
+footer{
+  display: flex;
+  flex-flow: row;
+  background-color: #C6d5c5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  clear: both;
+  text-align: left;
+}
+footer div{
+  flex-grow: 4;
+  padding: 0px 15px 0px 15px;
+}
+#img1{
+  display: flex;
+  flex-flow: column;
+  background-color: #82c3a6;
+}
+#imgs{
+  display: flex;
+  flex-flow: column;
+  background-color: #d5c75f ;
+}
+#sec1{
+  flex-grow: 1;
+}
+#sec2{
+  flex-grow: 1;
+}
+@media screen and (min-width: 900px){
+#imgs{
+    display: flex;
+    flex-flow: row;
+}
+#principal img{
+  width: 50%;
+}
+#imgs img{
+  height: 500px;
+  width: auto;
+}

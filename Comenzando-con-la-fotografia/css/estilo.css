@@ -1,3 +1,14 @@
+@-webkit-keyframes miSlideIn{
+	0%{
+		margin-top:150%;
+	}
+	60%{
+		margin-top:-5%;
+	}
+	100%{
+		margin-top:0%;
+	}
+}
 body{
   display: flex;
   flex-flow: column;
@@ -9,30 +20,30 @@ body{
 a:{
   text-decoration: none;
 }
+
 img{
   box-shadow: 2px 2px 2px #02010a;
   margin: 5%;
   width: 80%;
   height: auto;
+	transition: transform 1s ease-out;
 }
 header{
+color: white;
   background-color: #5b7989;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
+	animation:miSlideIn 1s;
+display: flex;
+flex-flow: column;
 }
 header h1{
-  color: white;
-  float: left;
-  padding-left: 2%;
-}
-header nav{
-  float: right;
-  padding: 2%;
+text-shadow: 2px 2px black;
 }
 footer{
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   background-color: #C6d5c5;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -51,7 +62,7 @@ footer div{
 #imgs{
   display: flex;
   flex-flow: column;
-  background-color: #d5c75f ;
+  background-color: #d5c75f;
 }
 #sec1{
   flex-grow: 1;
@@ -59,6 +70,23 @@ footer div{
 #sec2{
   flex-grow: 1;
 }
+
+
+#imgIzq:hover{
+	transform: rotate(10deg);
+}
+#imgIzq:hover{
+	box-shadow:2px 2px 3px #82c3a6;
+}
+
+
+#imgDer:hover{
+	transform: translate(20px,-5px);
+}
+#imgDer:hover{
+	box-shadow: 2px 2px 3px #82c3a6;
+}
+
 @media screen and (min-width: 900px){
 #imgs{
     display: flex;
@@ -70,4 +98,18 @@ footer div{
 #imgs img{
   height: 500px;
   width: auto;
+}
+footer{
+display: flex;
+flex-flow: row;
+}
+header h1{
+  color: white;
+  float: left;
+  padding-left: 2%;
+}
+header nav{
+  float: right;
+  padding: 2%;
+}
 }

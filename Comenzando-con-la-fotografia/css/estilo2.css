@@ -1,3 +1,14 @@
+@-webkit-keyframes miSlideIn{
+	0%{
+		margin-top:150%;
+	}
+	60%{
+		margin-top:-5%;
+	}
+	100%{
+		margin-top:0%;
+	}
+}
 body{
   display: flex;
   flex-flow: column;
@@ -23,6 +34,7 @@ header{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
+	animation:miSlideIn 1s;
 }
 header h1{
   color: white;
@@ -54,4 +66,5 @@ footer div{
 	display: flex;
 	flex-grow: 1;
 }
+
 }
